@@ -5,7 +5,6 @@ namespace ShoppingBL
     public interface IProductBL
     {   
         Product AddProduct(Product b_product);
-        
         List<Product> GetAllProduct();
         List<Product> GetAllProductsFromStore(Guid b_storeID);
         List<StoreFront> GetAllStoreFrontsByProductID(Guid b_productID);

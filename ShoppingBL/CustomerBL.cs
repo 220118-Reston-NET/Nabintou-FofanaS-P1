@@ -12,12 +12,12 @@ namespace ShoppingBL
             _customerRepo = b_customerRepo;
         }
 
-        // Add a new customer
+        
         public NewCustomer AddCustomer(NewCustomer b_customer)
         {
             List<ReturningCustomer> listOfCustomer = _customerRepo.GetAllCustomerOld();
 
-            //Logic that checks if customer already exists
+            
             if (listOfCustomer.Where(customer => customer.CustomerEmail == b_customer.CustomerEmail).Count() == 1)
             {
                 throw new Exception("Customer email already exists!");
@@ -33,7 +33,6 @@ namespace ShoppingBL
         }
 
 
-        // Customer login
 
         public ReturningCustomer Login(CustomerLogin b_customer)
         {
@@ -68,14 +67,7 @@ namespace ShoppingBL
         {
            return GetAllCustomerOld().Find(customer => customer.CustomerID.Equals(b_customerID));
         }
-        /*
-        public Customer GetCustomerInfoByID(string b_customerID)
-        {
-            Customer customerDetail = GetAllCustomer().Where(b => b.CustomerID == b_customerID).First();
-
-            return customerDetail;
-        }
-        */
+       
 
         public ReturningCustomer UpdateCustomer(ReturningCustomer b_customer)
         {
@@ -100,10 +92,10 @@ namespace ShoppingBL
              {
             List<ReturningCustomer> listOfCustomer = _customerRepo.GetAllCustomerOld();
 
-            // LINQ library
+           
             return listOfCustomer
-                        .Where(customer => customer.CustomerName.Contains(p_name)) //Where method is designed to filter a collection based on a condition
-                        .ToList(); //ToList method just converts into a list collection that our method needs to return
+                        .Where(customer => customer.CustomerName.Contains(p_name)) 
+                        .ToList(); 
          
             }
         }

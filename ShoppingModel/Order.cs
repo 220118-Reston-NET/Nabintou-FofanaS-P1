@@ -10,8 +10,7 @@ public class Order
     public decimal TotalPrice { get; set; }
     public DateTime createdAt { get; set; }
     
-    
-    
+
     public Order()
         {
             OrderID = Guid.NewGuid();

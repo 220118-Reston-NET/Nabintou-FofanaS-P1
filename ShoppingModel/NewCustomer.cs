@@ -10,7 +10,6 @@ public class NewCustomer
     public string CustomerPassword { get; set; }
     public DateTime CreatedAt { get; set; }
     
-        //Default constructor to add default values to the properties
         public NewCustomer()
         {
             CustomerID = Guid.NewGuid();

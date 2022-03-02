@@ -14,12 +14,12 @@ namespace ShoppingBL
 
         public async Task<StoreFront> AddNewStoreFront(StoreFront b_store)
         {
-        List<StoreFront> _listOfStoreFront = await GetAllStore();
+          List<StoreFront> _listOfStoreFront = await GetAllStore();
           if (_listOfStoreFront.Any(p => p.StoreName.Equals(b_store.StoreName)))
-         {
-         throw new Exception("Cannot add new store front profile due to the name is existing in the system!");
-         }
-         return await _storeRepo.AddNewStoreFront(b_store);
+          {
+             throw new Exception("Cannot add new store front profile due to the name is existing in the system!");
+          }
+            return await _storeRepo.AddNewStoreFront(b_store);
         }
 
 

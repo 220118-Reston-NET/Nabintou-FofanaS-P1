@@ -18,7 +18,6 @@ public class ReturningCustomer
             }
         }
     
-        //Default constructor to add default values to the properties
         public ReturningCustomer()
         {
             CustomerID = Guid.NewGuid();

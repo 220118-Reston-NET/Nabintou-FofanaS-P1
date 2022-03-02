@@ -15,8 +15,9 @@ namespace ShoppingBL
         
         public async Task<List<Order>> GetOrdersByStoreID(Guid p_storeID)
         {
-        List<Order> _listOfOrder = await GetAllOrders();
-        return _listOfOrder.FindAll(p => p.StoreID.Equals(p_storeID));
+            List<Order> _listOfOrder = await GetAllOrders();
+
+            return _listOfOrder.FindAll(p => p.StoreID.Equals(p_storeID));
         }
 
 
@@ -36,6 +37,7 @@ namespace ShoppingBL
         return _listOfOrder.Find(p => p.OrderID.Equals(b_orderID));
         }
 
+
       public async Task<Order> UpdateOrder(Order b_order)
       {
       Order _order = await GetOrderByOrderID(b_order.OrderID);
@@ -53,6 +55,7 @@ namespace ShoppingBL
         public async Task<List<Order>> GetAllOrdersByCustomerID(Guid b_customerID)
         {
             List<Order> _listOfOrder = await GetAllOrders();
+            
            return _listOfOrder.FindAll(p => p.CustomerID.Equals(b_customerID));
         }
 

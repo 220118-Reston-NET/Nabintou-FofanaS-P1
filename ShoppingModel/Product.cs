@@ -8,7 +8,6 @@ public class Product
     public decimal ProductPrice { get; set; }
     public DateTime createdAt { get; set; }
     
-        //Default constructor to add default values to the properties
         public Product()
         {
             ProductID = Guid.NewGuid();

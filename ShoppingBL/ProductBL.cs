@@ -49,17 +49,15 @@ namespace ShoppingBL
 
         public List<Product> SearchProduct(string p_name)
         {
-             {
+            {
+           
             List<Product> listOfProduct = _productRepo.GetAllProduct();
-
-
-            // LINQ library
             return listOfProduct
-                        .Where(product => product.ProductName.Contains(p_name)) //Where method is designed to filter a collection based on a condition
-                        .ToList(); //ToList method just converts into a list collection that our method needs to return
-        
+                        .Where(product => product.ProductName.Contains(p_name)) 
+                        .ToList(); 
            }
         }
+
 
          public Product UpdateProduct(Product b_product)
          {
@@ -71,8 +69,6 @@ namespace ShoppingBL
             }
             return _productRepo.UpdateProduct(b_product);
         }
-
-
     }
 }
 
