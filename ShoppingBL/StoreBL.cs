@@ -5,7 +5,7 @@ namespace ShoppingBL
 {
     public class StoreBL: IStoreBL
     {
-        private IRepository_s _storeRepo;
+        private readonly IRepository_s _storeRepo;
 
         public StoreBL(IRepository_s b_storeRepo)
         {

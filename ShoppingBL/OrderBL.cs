@@ -5,7 +5,7 @@ namespace ShoppingBL
 {
     public class OrderBL: IOrderBL
     {
-        private IRepository_o _orderRepo;
+        private readonly IRepository_o _orderRepo;
 
         public OrderBL(IRepository_o b_orderRepo)
         {

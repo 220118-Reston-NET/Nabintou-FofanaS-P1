@@ -13,12 +13,12 @@ namespace ShoppingDL
         }
 
         
-        // Adding product
+      
         public Product AddProduct(Product b_product)
         {
             string sqlQuery = @"insert into Product 
                               values(@productID, @productName, @productDescription, @productPrice, @createdAt)";
-              //b_product.ProductID = Guid.NewGuid();
+              
               b_product.createdAt = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
@@ -32,14 +32,13 @@ namespace ShoppingDL
                 command.Parameters.AddWithValue("@productPrice", b_product.ProductPrice);
                 command.Parameters.AddWithValue("@createdAt", b_product.createdAt);
 
-                //Executes the SQL statement
+              
                 command.ExecuteNonQuery();
             }
             return b_product;
         }
 
 
-        // Getting all products
         public List<Product> GetAllProduct()
         {
             List<Product> listOfProduct = new List<Product>();
@@ -48,10 +47,9 @@ namespace ShoppingDL
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
-                //Opens connection to the database
+              
                 con.Open();
 
-                //Create command object that has our sqlQuery and con object
                 SqlCommand command = new SqlCommand(sqlQuery, con);
 
                 SqlDataReader reader = command.ExecuteReader();
@@ -59,9 +57,9 @@ namespace ShoppingDL
                 while (reader.Read())
                 {
                     listOfProduct.Add(new Product(){
-                        //Zero-based column index
-                        ProductID = reader.GetGuid(0), //It will get column ProductID since that is the very first column of our select statement
-                        ProductName = reader.GetString(1), //it will get the ProductName column since it is the second column of our select statement
+                       
+                        ProductID = reader.GetGuid(0), 
+                        ProductName = reader.GetString(1), 
                         ProductDescription = reader.GetString(2),
                         ProductPrice = reader.GetDecimal(3),
                         createdAt = reader.GetDateTime(4),
@@ -73,7 +71,6 @@ namespace ShoppingDL
        }
 
 
-       // Getting all products from store
 
         public List<Product> GetAllProductsFromStore(Guid b_storeID)
         {
@@ -96,8 +93,8 @@ namespace ShoppingDL
         {
           _listOfProducts.Add(new Product()
           {
-            ProductID = reader.GetGuid(0), //It will get column ProductID since that is the very first column of our select statement
-                        ProductName = reader.GetString(1), //it will get the ProductName column since it is the second column of our select statement
+            ProductID = reader.GetGuid(0), 
+                        ProductName = reader.GetString(1), 
                         ProductDescription = reader.GetString(2),
                         ProductPrice = reader.GetDecimal(3),
                         createdAt = reader.GetDateTime(4),
@@ -108,8 +105,6 @@ namespace ShoppingDL
       return _listOfProducts;
         }
 
-
-        // Getting all storefront by product id
         public List<StoreFront> GetAllStoreFrontsByProductID(Guid b_productID)
     {
         List<StoreFront> StoreFront = new List<StoreFront>();

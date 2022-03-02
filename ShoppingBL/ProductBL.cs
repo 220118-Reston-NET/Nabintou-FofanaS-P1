@@ -6,7 +6,7 @@ namespace ShoppingBL
     public class ProductBL : IProductBL
     {
 
-        private IRepository_p _productRepo;
+        private readonly IRepository_p _productRepo;
         public ProductBL(IRepository_p b_productRepo)
         {
             _productRepo = b_productRepo;

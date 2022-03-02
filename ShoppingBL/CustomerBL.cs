@@ -5,7 +5,7 @@ namespace ShoppingBL
 {
     public class CustomerBL: ICustomerBL
     {
-        private IRepository_c _customerRepo;
+        private readonly IRepository_c _customerRepo;
 
         public CustomerBL(IRepository_c b_customerRepo)
         {

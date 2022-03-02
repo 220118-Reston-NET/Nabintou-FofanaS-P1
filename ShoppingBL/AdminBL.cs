@@ -5,7 +5,7 @@ namespace ShoppingBL
 {
     public class AdminBL: IAdminBL
     {
-        private IRepository_a _adminRepo;
+        private readonly IRepository_a _adminRepo;
 
         public AdminBL(IRepository_a b_adminRepo)
         {

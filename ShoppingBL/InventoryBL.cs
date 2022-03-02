@@ -6,7 +6,7 @@ namespace ShoppingBL
 {
     public class InventoryBL: IInventoryBL
     {
-        private IRepository_v _invenRepo;
+        private readonly IRepository_v _invenRepo;
 
         public InventoryBL(IRepository_v b_invRepo)
         {
