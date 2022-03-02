@@ -1,8 +1,9 @@
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 using ShoppingBL;
 using ShoppingDL;
 using ShoppingModel;
 using Xunit;
+
 
 namespace CustomerTest
 {
@@ -25,6 +26,7 @@ namespace CustomerTest
             expectedListOfCustomer.Add(customer);
 
             //We are mocking one of the required dependencies of PokemonBL which is IRepository
+        
             Mock<IRepository_c> mockRepo = new Mock<IRepository_c>();
 
             //We change that if our IRepository.GetAllPokemon() is called, it will always return our expectedListOfPoke
@@ -45,4 +47,4 @@ namespace CustomerTest
 
     
     }
-}
+}*/

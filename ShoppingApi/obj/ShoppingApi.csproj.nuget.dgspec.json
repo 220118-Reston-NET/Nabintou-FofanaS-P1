@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingApi\\ShoppingApi.csproj": {}
+    "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingApi\\ShoppingApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingApi\\ShoppingApi.csproj": {
+    "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingApi\\ShoppingApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingApi\\ShoppingApi.csproj",
+        "projectUniqueName": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingApi\\ShoppingApi.csproj",
         "projectName": "ShoppingApi",
-        "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingApi\\ShoppingApi.csproj",
+        "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingApi\\ShoppingApi.csproj",
         "packagesPath": "C:\\Users\\sandi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingApi\\obj\\",
+        "outputPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingBL\\ShoppingBL.csproj": {
-                "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingBL\\ShoppingBL.csproj"
+              "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingBL\\ShoppingBL.csproj": {
+                "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingBL\\ShoppingBL.csproj"
               },
-              "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingDL\\ShoppingDL.csproj": {
-                "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingDL\\ShoppingDL.csproj"
+              "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingDL\\ShoppingDL.csproj": {
+                "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingDL\\ShoppingDL.csproj"
               },
-              "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj": {
-                "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj"
+              "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj": {
+                "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj"
               }
             }
           }
@@ -89,18 +89,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingBL\\ShoppingBL.csproj": {
+    "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingBL\\ShoppingBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingBL\\ShoppingBL.csproj",
+        "projectUniqueName": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingBL\\ShoppingBL.csproj",
         "projectName": "ShoppingBL",
-        "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingBL\\ShoppingBL.csproj",
+        "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingBL\\ShoppingBL.csproj",
         "packagesPath": "C:\\Users\\sandi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingBL\\obj\\",
+        "outputPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingBL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -117,11 +117,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingDL\\ShoppingDL.csproj": {
-                "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingDL\\ShoppingDL.csproj"
+              "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingDL\\ShoppingDL.csproj": {
+                "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingDL\\ShoppingDL.csproj"
               },
-              "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj": {
-                "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj"
+              "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj": {
+                "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj"
               }
             }
           }
@@ -150,18 +150,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingDL\\ShoppingDL.csproj": {
+    "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingDL\\ShoppingDL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingDL\\ShoppingDL.csproj",
+        "projectUniqueName": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingDL\\ShoppingDL.csproj",
         "projectName": "ShoppingDL",
-        "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingDL\\ShoppingDL.csproj",
+        "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingDL\\ShoppingDL.csproj",
         "packagesPath": "C:\\Users\\sandi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingDL\\obj\\",
+        "outputPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingDL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -178,8 +178,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj": {
-                "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj"
+              "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj": {
+                "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj"
               }
             }
           }
@@ -214,18 +214,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj": {
+    "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj",
+        "projectUniqueName": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj",
         "projectName": "ShoppingModel",
-        "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj",
+        "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj",
         "packagesPath": "C:\\Users\\sandi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\obj\\",
+        "outputPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -268,7 +268,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

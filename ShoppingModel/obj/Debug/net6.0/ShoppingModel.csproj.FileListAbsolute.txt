@@ -82,3 +82,15 @@ C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingModel\obj\Debug\net6.0\Sho
 C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingModel\obj\Debug\net6.0\refint\ShoppingModel.dll
 C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingModel\obj\Debug\net6.0\ShoppingModel.pdb
 C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingModel\obj\Debug\net6.0\ref\ShoppingModel.dll
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\bin\Debug\net6.0\ShoppingModel.deps.json
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\bin\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\bin\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\ShoppingModel.csproj.AssemblyReference.cache
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\ShoppingModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\ShoppingModel.AssemblyInfoInputs.cache
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\ShoppingModel.AssemblyInfo.cs
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\ShoppingModel.csproj.CoreCompileInputs.cache
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\refint\ShoppingModel.dll
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\Desktop\P1 Project\ShoppingModel\obj\Debug\net6.0\ref\ShoppingModel.dll

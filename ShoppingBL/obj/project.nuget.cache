@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hvvHd2kB8GFRqT8FwQXuQi3M6He2GWRNCAyipORUSD4w8v8ATVwffzw6ZB0r1RN2xX0fEsLALiY1GWTJ5V9uNw==",
+  "dgSpecHash": "3Rx8v7fgFH294XtqUdO72e2af9abQxndzFGsPZQRYvAPaj5BfhEhcc29yhpuh3WWMbr+pLBaxcc1K+ylXcpNlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingBL\\ShoppingBL.csproj",
+  "projectFilePath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingBL\\ShoppingBL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sandi\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\sandi\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

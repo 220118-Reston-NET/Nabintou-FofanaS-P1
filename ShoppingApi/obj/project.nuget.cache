@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sq5eYbECmFIdXYD8N5hkPGUUk0AAx8ZPlqBArk5lsrYxuO4slDqfgMzmewrw2c+qie+CFxKeQ83DWCjOdsYiBQ==",
+  "dgSpecHash": "dFmr1xRoqTv7oRy+UiTwmr8W8bPRLGL10UwZUVly4FVYsIUImx1BqO+QyOnAN4Htv15Zgl5eHMEO8bCIxxdzIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingApi\\ShoppingApi.csproj",
+  "projectFilePath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingApi\\ShoppingApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sandi\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\sandi\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj",
+      "projectUniqueName": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj",
       "projectName": "ShoppingModel",
-      "projectPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\ShoppingModel.csproj",
+      "projectPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\ShoppingModel.csproj",
       "packagesPath": "C:\\Users\\sandi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sandi\\OneDrive\\Desktop\\P1_Project_ShoppingApp\\ShoppingModel\\obj\\",
+      "outputPath": "C:\\Users\\sandi\\Desktop\\P1 Project\\ShoppingModel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
