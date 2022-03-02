@@ -1,0 +1,119 @@
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\bin\Debug\net6.0\ShoppingBL.deps.json
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\bin\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\bin\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\bin\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\bin\Debug\net6.0\ShoppingDL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\bin\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\bin\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\bin\Debug\net6.0\ShoppingDL.pdb
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.AssemblyReference.cache
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ShoppingBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfoInputs.cache
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfo.cs
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CoreCompileInputs.cache
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CopyComplete
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P0-main\Nabintous-Fofana-P0-main\ShoppingBL\obj\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.deps.json
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingDL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingDL.pdb
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.AssemblyReference.cache
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfoInputs.cache
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfo.cs
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CoreCompileInputs.cache
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CopyComplete
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\refint\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.deps.json
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingDL.dll
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingDL.pdb
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.AssemblyReference.cache
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfoInputs.cache
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfo.cs
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CoreCompileInputs.cache
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CopyComplete
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\Nabintous-Fofana-P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.deps.json
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\bin\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingDL.dll
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingDL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.AssemblyReference.cache
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfoInputs.cache
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfo.cs
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CoreCompileInputs.cache
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CopyComplete
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.deps.json
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\bin\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingDL.dll
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\bin\Debug\net6.0\ShoppingDL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.AssemblyReference.cache
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfoInputs.cache
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfo.cs
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CoreCompileInputs.cache
+C:\Users\sandi\OneDrive\Desktop\P1 Project\Shopping\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CopyComplete
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingBL.deps.json
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingDL.dll
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingDL.pdb
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.AssemblyReference.cache
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfoInputs.cache
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfo.cs
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CoreCompileInputs.cache
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CopyComplete
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ref\ShoppingBL.dll
+C:\Users\sandi\OneDrive\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingBL.deps.json
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingDL.dll
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingModel.dll
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingModel.pdb
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\bin\Debug\net6.0\ShoppingDL.pdb
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.AssemblyReference.cache
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfoInputs.cache
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.AssemblyInfo.cs
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CoreCompileInputs.cache
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.csproj.CopyComplete
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.dll
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\refint\ShoppingBL.dll
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ShoppingBL.pdb
+C:\Users\sandi\Desktop\P1_Project_ShoppingApp\ShoppingBL\obj\Debug\net6.0\ref\ShoppingBL.dll

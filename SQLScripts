@@ -1,0 +1,110 @@
+-----------------TABLES---------------------
+CREATE TABLE Admin(
+	adminID UNIQUEIDENTIFIER PRIMARY KEY,
+    adminName varchar(50),
+    adminEmail varchar(50),
+	adminUsername varchar(50),
+	adminPassword varchar(50),
+	createdAt smalldatetime
+)
+
+
+CREATE TABLE Customer(
+	customerID UNIQUEIDENTIFIER PRIMARY KEY,
+	customerName varchar(50),
+	customerAddress varchar(50),
+	customerEmail varchar(50),
+	customerUsername varchar(50),
+	customerPassword varchar(50)
+)
+
+
+CREATE TABLE StoreFront(
+	storeID UNIQUEIDENTIFIER PRIMARY KEY,
+	storeName varchar(50),
+	storeLocation varchar(50)
+)
+
+
+CREATE TABLE Product(
+	productID UNIQUEIDENTIFIER PRIMARY KEY,
+	productName varchar(50),
+	productDescription varchar(50),
+	productPrice smallmoney,
+	createdAt smalldatetime
+)
+
+
+CREATE TABLE Orders(
+	orderID UNIQUEIDENTIFIER PRIMARY KEY,
+	customerID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Customer(customerID),
+	storeID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES StoreFront(storeID),
+	totalPrice smallmoney,
+	createdAt smalldatetime
+)
+    
+
+CREATE TABLE Inventory(
+	storeID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES StoreFront(storeID),
+	productID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Product(productID),
+	productQuantity int
+)
+
+CREATE TABLE LineItems(
+    productID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Product(productID),
+    orderID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Orders(orderID),
+    productQuantity int,
+    priceAtCheckout smallmoney 
+)
+
+
+select * from Orders o 
+select * from StoreFront sf 
+select * from Inventory i 
+select * from Admin a 
+select * from Customer c 
+select * from Product p 
+
+
+
+
+insert into Inventory  
+values('3FA85F64-5717-4562-B3FC-2C963F66AFA6', '3FA85F60-5717-4562-B3FC-2C963F66AFA6', 1000)
+
+insert into Inventory  
+values('3FA85F64-5717-4562-B3FC-2C963F66AFA6', '3FA85F62-5717-4562-B3FC-2C963F66AFA6', 1000)
+
+insert into Inventory  
+values('3FA85F64-5717-4562-B3FC-2C963F66AFA6', '1FA85F64-5717-4562-B3FC-2C963F66AFA6', 1000)
+
+insert into Inventory  
+values('3FA85F64-5717-4562-B3FC-2C963F66AFA6', '3FA85F64-5717-4562-B3FC-2C963F66AFA6', 1000)
+
+
+insert into StoreFront 
+values ('3FA85F64-5717-4562-B3FC-2C963F66AFA6', 'Karlaa', 'Dallas, TX')
+
+
+insert into Product 
+values('3FA85F64-5717-4562-B3FC-2C963F66AFA6', 'Cookies', 'snack', 10, '2022-03-01 05:10:00.000')
+
+insert into Product 
+values('1FA85F64-5717-4562-B3FC-2C963F66AFA6', 'Ice Cream', 'dessert', 9, '2022-03-01 05:10:00.000')
+
+insert into Product 
+values('3FA85F62-5717-4562-B3FC-2C963F66AFA6', 'Juice', 'natural fruit juice', 5, '2022-03-01 05:10:00.000')
+
+
+insert into Product 
+values('3FA85F60-5717-4562-B3FC-2C963F66AFA6', 'Bread', 'bread', 2, '2022-03-01 05:10:00.000')
+
+
+
+
+insert into Orders 
+values(1, '3FA85F64-5717-4562-B3FC-2C963F66AFA6', 1, 'Karlaa', 6.00, '2022-03-01 05:10:00.000' )
+
+insert into StoreFront 
+values(1, 'Karlaa', 'Newark, NJ', '2022-03-01 05:10:00.000')
+
+

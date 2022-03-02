@@ -1,0 +1,22 @@
+2022-02-26 14:42:00.159 -06:00 [INF] Customer successfully registered 
+ShoppingModel.NewCustomer
+2022-02-26 14:43:12.959 -06:00 [INF] Customer successfully registered 
+ShoppingModel.NewCustomer
+2022-03-01 20:02:46.925 -06:00 [INF] Customer successfully registered
+2022-03-01 20:27:55.115 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-01 20:40:46.034 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-01 20:41:59.230 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-01 20:50:59.657 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-01 20:52:00.796 -06:00 [INF] List of all store
+2022-03-01 20:52:00.981 -06:00 [WRN] Could not show store
+2022-03-01 20:52:00.981 -06:00 [WRN] Invalid column name 'createdAt'.
+2022-03-01 21:02:49.028 -06:00 [INF] List of all store
+2022-03-01 21:07:25.453 -06:00 [WRN] Cannot import this product due to it already in the store! Please check the inventory!
+2022-03-01 21:07:52.075 -06:00 [WRN] Invalid column name 'quantity'.
+2022-03-01 21:08:40.378 -06:00 [WRN] Invalid column name 'quantity'.
+2022-03-01 21:10:39.809 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-01 21:14:32.697 -06:00 [WRN] Must declare the scalar variable "@productQuantity".
+2022-03-01 21:15:56.080 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Inventory__store__69FBBC1F". The conflict occurred in database "ShoppingDBDemo", table "dbo.StoreFront", column 'storeID'.
+The statement has been terminated.
+2022-03-01 21:19:52.033 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-01 21:21:59.888 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
