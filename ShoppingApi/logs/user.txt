@@ -20,3 +20,4 @@ ShoppingModel.NewCustomer
 The statement has been terminated.
 2022-03-01 21:19:52.033 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
 2022-03-01 21:21:59.888 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-02 01:59:05.387 -06:00 [INF] Customer successfully registered

@@ -35,7 +35,7 @@ namespace ShoppingApi.Controllers
             {
 
                 return Created("Store successfully added", _storeBL.AddNewStoreFront(b_store));
-                Log.Information("Store added");
+                
             }
             catch(Exception e)
             {
