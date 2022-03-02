@@ -83,11 +83,8 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       shell: pwsh
       run: |
-<<<<<<< HEAD
+
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"220118-Reston-NET_Nabintou-FofanaS-P1" /o:"220118-reston-net" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverage.exclusions=**/ShoppingApi/wwwroot/lib/**,**/**ShoppingDL/*.cs,**/ShoppingApi/Controllers/*.cs /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.vstest.reportsPath="**/TestResults/*.trx"
-=======
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"220118-Reston-NET_Nabintou-FofanaS-P1" /o:"220118-reston-net" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverage.exclusions=**/ShoppingApi/wwwroot/lib/**,**/**ShoppingDL/*.cs,**/ShoppingApi/**/*.cs /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" -d:sonar.vstest.reportsPath="**/TestResults/*.trx"
->>>>>>> 79e93b96ac4e6b82b82341ddf0b15295c5b4836a
           dotnet build ./ShoppingApi -c Release
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
       
