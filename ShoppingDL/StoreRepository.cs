@@ -44,7 +44,7 @@ namespace ShoppingDL
         public async Task<StoreFront> AddNewStoreFront(StoreFront b_store)
         {
             string _sqlQuery = @"INSERT INTO StoreFront
-                          
+                          (storeID, storeName, storeLocation)
                           VALUES(@storeID, @storeName, @storeLocation);";
 
          using (SqlConnection conn = new SqlConnection(_connectionStrings))

@@ -1,4 +1,4 @@
-/*using System.Collections.Generic;
+using System.Collections.Generic;
 using System;
 using Moq;
 using ShoppingBL;
@@ -12,41 +12,95 @@ namespace StoreTest
     public class StoreBLTest
     {
         [Fact]
-        public void Should_Get_All_Store()
-        {
-            //Arrange
-            string StoreName = "Karlaa";
-            string StoreLocation = "Dallas";
+    public async Task Should_Get_All_StoreFronts()
+    {
+      // Arrange
+      List<StoreFront> _expectedListOfStoreFronts = new List<StoreFront>();
+      _expectedListOfStoreFronts.Add(new StoreFront()
+      {
+        StoreID = Guid.NewGuid(),
+        StoreName = "MO",
+        StoreLocation = "Dallas, TX"
+      });
 
-            StoreFront _store = new StoreFront()
-            {
-                StoreName = "Karlaa",
-                StoreLocation = "Dallas"
-            };
+      Mock<IRepository_s> _mockRepo = new Mock<IRepository_s>();
+      _mockRepo.Setup(repo => repo.GetAllStore()).ReturnsAsync(_expectedListOfStoreFronts);
+      IStoreBL _storeList = new StoreBL(_mockRepo.Object);
 
-            List<StoreFront> expectedListOfStore = new List<StoreFront>();
-            expectedListOfStore.Add(_store);
+      // Act
+      List<StoreFront> _actualListOfStoreFronts = await _storeList.GetAllStore();
 
-            //We are mocking one of the required dependencies of PokemonBL which is IRepository
-            Mock<IRepository_s> mockRepo = new Mock<IRepository_s>();
-
-            //We change that if our IRepository.GetAllPokemon() is called, it will always return our expectedListOfPoke
-            //In this way, we guaranteed that our dependency will always work so if something goes wrong it is the business layer's fault
-            mockRepo.Setup(StoreRepository => StoreRepository.GetAllStore()).Returns(expectedListOfStore);
-
-            //We passed in the mock version of IRepository
-            IStoreBL storeBL = new StoreBL(mockRepo.Object);
-
-            //Act
-            
-            List<StoreFront> actualListOfStore = storeBL.GetAllStore();
-
-            //Assert
-            Assert.Same(expectedListOfStore, actualListOfStore); //Checks if both list are the same thing
-            Assert.Equal(StoreName, actualListOfStore[0].StoreName); //Checks the first element of actualListOfPoke to have the same name
-            Assert.Equal(StoreLocation, actualListOfStore[0].StoreLocation); //Checks the first element of actualListOfPoke to have teh same level
-        }
-
-    
+      // Assert
+      Assert.Same(_expectedListOfStoreFronts, _actualListOfStoreFronts);
+      Assert.Equal(_expectedListOfStoreFronts[0].StoreName, _actualListOfStoreFronts[0].StoreName);
     }
-}*/
+
+
+
+     [Fact]
+    public async Task Should_Get_StoreFront_That_Have_Name_Matched()
+    {
+      // Arrange
+      List<StoreFront> _expectedStore = new List<StoreFront>();
+      StoreFront store_1 = new StoreFront()
+      {
+        StoreID = Guid.NewGuid(),
+        StoreName = "Karlaa",
+        StoreLocation = "Dallas, TX"
+      };
+      StoreFront store_2 = new StoreFront()
+      {
+        StoreID = Guid.NewGuid(),
+        StoreName = "KarGoods",
+        StoreLocation = "Newark, NJ"
+      };
+      _expectedStore.Add(store_1);
+      _expectedStore.Add(store_2);
+
+      Mock<IRepository_s> _mockRepo = new Mock<IRepository_s>();
+      _mockRepo.Setup(repo => repo.GetAllStore()).ReturnsAsync(_expectedStore);
+      IStoreBL _storeList = new StoreBL(_mockRepo.Object);
+
+      // Act
+      List<StoreFront> _actualStore = await _storeList.SearchStoreByName("Kar");
+
+      // Assert
+      Assert.Equal(_expectedStore, _actualStore);
+    }
+    
+
+
+    [Fact]
+    public async Task Should_Not_Add_New_StoreFront()
+    {
+      // Arrange
+      List<StoreFront> _expectedListOfStoreFronts = new List<StoreFront>();
+      _expectedListOfStoreFronts.Add(new StoreFront()
+      {
+        StoreID = Guid.NewGuid(),
+        StoreName = "Karlaa",
+        StoreLocation = "Dallas, TX"
+      });
+
+
+      
+      
+      
+      Mock<IRepository_s> _mockRepo = new Mock<IRepository_s>();
+      _mockRepo.Setup(repo => repo.GetAllStore()).ReturnsAsync(_expectedListOfStoreFronts);
+      IStoreBL _storeList = new StoreBL(_mockRepo.Object);
+
+      StoreFront _newStoreF = new StoreFront();
+
+      // Act & Assert
+      await Assert.ThrowsAsync<System.Exception>(
+        async () => _newStoreF = await _storeList.AddNewStoreFront(new StoreFront()
+        {
+          StoreID = Guid.NewGuid(),
+          StoreName = "Karlaa",
+          StoreLocation = "Dallas, TX"
+        })
+      );
+    }
+    }
+}
