@@ -26,22 +26,21 @@ public class PlaceOrderTest
       });
 
      
-        //Arrange
+       
         Order test_listOfOrder = new Order();
         string testNameVar = "Karlaa";
         Guid testStoreIDVar = Guid.Parse("6575E291-0EAE-4251-90AA-E603DEBFC7EE");
       
-         //Act
-        test_listOfOrder.StoreName = testNameVar;
+         
+       
         test_listOfOrder.StoreID = testStoreIDVar;
 
-        //Assert
-        Assert.NotNull(test_listOfOrder.StoreName);
-        Assert.Equal(testNameVar, test_listOfOrder.StoreName);
- 
+        
+        
         Assert.NotNull( test_listOfOrder.StoreID);
         Assert.Equal(testStoreIDVar, test_listOfOrder.StoreID);
         }
 }
-*/
+}
+
    
