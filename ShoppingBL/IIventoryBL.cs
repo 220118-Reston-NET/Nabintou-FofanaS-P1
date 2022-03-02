@@ -11,5 +11,6 @@ namespace ShoppingBL
         Task<List<Inventory>> GetAllInventory();
         Task<Inventory> GetInventory(Inventory b_inven);
 
+        Task<List<Inventory>> GetStoreInventoryByStoreID(Guid b_storeID);
     }
 }
