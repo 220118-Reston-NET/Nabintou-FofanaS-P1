@@ -220,20 +220,21 @@ namespace ShoppingDL
             using (SqlConnection con = new SqlConnection(_connectionStrings))
             {
 
-                await con.OpenAsync();con.Open();
+                await con.OpenAsync();
 
                 SqlCommand command = new SqlCommand(SQLQuery, con);
 
                 command.Parameters.AddWithValue("@storeID", b_storeID);
                  SqlDataReader reader = await command.ExecuteReaderAsync();
+
                 while (reader.Read())
                 {
                     listOfOrders.Add(new Order(){
                         OrderID = reader.GetGuid(0),
-            CustomerID = reader.GetGuid(1),
-            StoreID = reader.GetGuid(2),
-            TotalPrice = reader.GetDecimal(3),
-            createdAt = reader.GetDateTime(4),
+                        CustomerID = reader.GetGuid(1),
+                        StoreID = reader.GetGuid(2),
+                        TotalPrice = reader.GetDecimal(3),
+                        createdAt = reader.GetDateTime(4),
             //ShoppingCart = await GetLineItemsByOrderID(reader.GetGuid(0))
                     });
 

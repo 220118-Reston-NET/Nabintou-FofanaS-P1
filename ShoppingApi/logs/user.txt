@@ -149,3 +149,13 @@ The statement has been terminated.
 2022-03-03 12:29:56.328 -06:00 [WRN] The connection was not closed. The connection's current state is open.
 2022-03-03 12:30:19.527 -06:00 [WRN] Error while getting order history
 2022-03-03 12:30:19.527 -06:00 [WRN] Unable to cast object of type 'System.Decimal' to type 'System.Guid'.
+2022-03-03 12:38:56.097 -06:00 [WRN] Error while getting order history
+2022-03-03 12:38:56.103 -06:00 [WRN] The connection was not closed. The connection's current state is open.
+2022-03-03 12:39:59.284 -06:00 [WRN] Error while getting order history
+2022-03-03 12:39:59.284 -06:00 [WRN] The connection was not closed. The connection's current state is open.
+2022-03-03 12:40:33.557 -06:00 [WRN] Error while getting order history
+2022-03-03 12:40:33.557 -06:00 [WRN] The connection was not closed. The connection's current state is open.
+2022-03-03 12:47:57.620 -06:00 [WRN] Error while getting order history
+2022-03-03 12:47:57.632 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-03 12:48:12.814 -06:00 [WRN] Error while getting order history
+2022-03-03 12:48:12.814 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.

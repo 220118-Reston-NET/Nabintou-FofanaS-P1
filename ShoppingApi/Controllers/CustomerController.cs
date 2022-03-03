@@ -105,18 +105,19 @@ namespace ShoppingApi.Controllers
 
 
 
-        [HttpGet("CustomerOrderHistory")]
+         [HttpGet("CustomerOrderHistory")]
         public async Task<IActionResult> GetAllOrdersByCustomerID([FromQuery] Guid b_customerID)
         {
         try
         {
           return Ok(await _orderBL.GetAllOrdersByCustomerID(b_customerID));
         }
-         catch (Exception e)
-      {
-        Log.Warning("Error while getting order history");
-        Log.Warning(e.Message);
-        return Conflict(e.Message);
+          catch (Exception e)
+        {
+        
+         Log.Warning("Error while getting order history");
+                Log.Warning(e.Message);
+                 return Conflict(e.Message);
         }
         }
 
