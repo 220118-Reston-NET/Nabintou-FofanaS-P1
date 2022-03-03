@@ -9,6 +9,8 @@ public class ReturningCustomer
     public string CustomerUsername { get; set; }
     public string CustomerPassword { get; set; }
     private List<Order> _orders { get; set; }
+    
+    /*
     public List<Order> Orders
         {
             get { return _orders; }
@@ -17,7 +19,7 @@ public class ReturningCustomer
                 _orders = value;
             }
         }
-    
+    */
         public ReturningCustomer()
         {
             CustomerID = Guid.NewGuid();
@@ -26,13 +28,8 @@ public class ReturningCustomer
             CustomerEmail = "";
             CustomerUsername = "";
             CustomerPassword = "";
-            
-             _orders = new List<Order>()
-            {
-                new Order()
-            };
-            
+            _orders = new List<Order>()
+            {new Order()}; 
         }
-       
     }
 }

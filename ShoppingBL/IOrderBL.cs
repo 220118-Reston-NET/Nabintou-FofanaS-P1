@@ -11,6 +11,9 @@ namespace ShoppingBL
         Task<List<LineItem>> GetLineItemsByOrderID(Guid b_orderID);
         Task<List<Order>> GetAllOrdersByCustomerID(Guid b_customerID);
         Task<List<Order>> GetAllOrdersByStoreID(Guid b_storeID);
+        Task<List<LineItem>> AddLineItemsToOrder(Order b_order);
+        Task<List<Order>> GetOrderbyPrice();
+        
     }
 }
      

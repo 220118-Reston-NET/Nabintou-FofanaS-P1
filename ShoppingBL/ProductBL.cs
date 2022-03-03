@@ -27,17 +27,11 @@ namespace ShoppingBL
 
 
 
-        public List<Product> GetAllProductsFromStore(Guid b_storeID)
+        public List<Product> GetProductByStoreID(Guid b_storeID)
         {
-            return _productRepo.GetAllProductsFromStore(b_storeID);
+            return _productRepo.GetProductByStoreID(b_storeID);
         }
 
-
-
-        public List<StoreFront> GetAllStoreFrontsByProductID(Guid b_productID)
-        {
-            return _productRepo.GetAllStoreFrontsByProductID(b_productID);
-        }
 
         public Product GetProductDetail(Guid b_productID)
         {

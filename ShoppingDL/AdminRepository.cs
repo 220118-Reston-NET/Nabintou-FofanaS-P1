@@ -16,7 +16,7 @@ namespace ShoppingDL
             string _sqlQuery = @"INSERT INTO Admin
                 VALUES(@adminID, @adminName, @adminEmail, @adminUsername, @adminPassword, @createdAt)";
 
-           // b_admin.AdminID = Guid.NewGuid();
+            b_admin.AdminID = Guid.NewGuid();
             b_admin.CreatedAt = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
         using (SqlConnection con = new SqlConnection(_connectionStrings))
         {

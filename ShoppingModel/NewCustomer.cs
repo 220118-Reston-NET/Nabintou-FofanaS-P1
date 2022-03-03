@@ -8,7 +8,7 @@ public class NewCustomer
     public string CustomerEmail { get; set; }
     public string CustomerUsername { get; set; }
     public string CustomerPassword { get; set; }
-    public DateTime CreatedAt { get; set; }
+    public DateTime CreatedAt;
     
         public NewCustomer()
         {

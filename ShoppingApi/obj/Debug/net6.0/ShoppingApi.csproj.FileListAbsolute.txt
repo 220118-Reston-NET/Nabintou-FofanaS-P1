@@ -1720,3 +1720,13 @@ C:\Users\sandi\Desktop\P1 Project\ShoppingApi\obj\Debug\net6.0\refint\ShoppingAp
 C:\Users\sandi\Desktop\P1 Project\ShoppingApi\obj\Debug\net6.0\ShoppingApi.pdb
 C:\Users\sandi\Desktop\P1 Project\ShoppingApi\obj\Debug\net6.0\ShoppingApi.genruntimeconfig.cache
 C:\Users\sandi\Desktop\P1 Project\ShoppingApi\obj\Debug\net6.0\ref\ShoppingApi.dll
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\publish\web.config
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\web.config
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\appsettings.Development.json
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\appsettings.json
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\publish\appsettings.Development.json
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\publish\appsettings.json
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\publish\ShoppingApi.deps.json
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\publish\ShoppingApi.runtimeconfig.json
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\ShoppingApi.deps.json
+C:\Users\sandi\Desktop\P1 Project\ShoppingApi\bin\Debug\net6.0\publish\publish\ShoppingApi.runtimeconfig.json

@@ -21,3 +21,98 @@ The statement has been terminated.
 2022-03-01 21:19:52.033 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
 2022-03-01 21:21:59.888 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
 2022-03-02 01:59:05.387 -06:00 [INF] Customer successfully registered
+2022-03-02 16:14:40.781 -06:00 [INF] Customer successfully registered
+2022-03-02 16:51:34.852 -06:00 [WRN] Error while placing order
+2022-03-02 16:51:34.858 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__customer__671F4F74". The conflict occurred in database "ShoppingDBDemo", table "dbo.Customer", column 'customerID'.
+The statement has been terminated.
+2022-03-02 17:03:57.647 -06:00 [INF] Customer successfully registered
+2022-03-02 17:58:59.349 -06:00 [WRN] Error while placing order
+2022-03-02 17:58:59.363 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-02 18:02:53.339 -06:00 [WRN] Error while placing order
+2022-03-02 18:02:53.353 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__customer__671F4F74". The conflict occurred in database "ShoppingDBDemo", table "dbo.Customer", column 'customerID'.
+The statement has been terminated.
+2022-03-02 18:04:05.957 -06:00 [WRN] Error while placing order
+2022-03-02 18:04:05.957 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__customer__671F4F74". The conflict occurred in database "ShoppingDBDemo", table "dbo.Customer", column 'customerID'.
+The statement has been terminated.
+2022-03-02 18:04:08.665 -06:00 [WRN] Error while placing order
+2022-03-02 18:04:08.666 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__customer__671F4F74". The conflict occurred in database "ShoppingDBDemo", table "dbo.Customer", column 'customerID'.
+The statement has been terminated.
+2022-03-02 18:05:20.656 -06:00 [WRN] Error while placing order
+2022-03-02 18:05:20.657 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-02 18:07:07.834 -06:00 [WRN] Error while placing order
+2022-03-02 18:07:07.834 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-02 18:07:45.525 -06:00 [WRN] Error while placing order
+2022-03-02 18:07:45.525 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-02 18:10:45.840 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-02 20:18:55.165 -06:00 [WRN] Error while placing order
+2022-03-02 20:18:55.174 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-02 20:19:34.615 -06:00 [WRN] Error while placing order
+2022-03-02 20:19:34.615 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-02 23:26:16.840 -06:00 [WRN] Error while placing order
+2022-03-02 23:26:16.850 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-02 23:27:36.815 -06:00 [WRN] Error while placing order
+2022-03-02 23:27:36.815 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-02 23:27:41.187 -06:00 [WRN] Error while placing order
+2022-03-02 23:27:41.187 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-02 23:36:25.380 -06:00 [WRN] Error while placing order
+2022-03-02 23:36:25.380 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-02 23:38:31.515 -06:00 [WRN] Error while placing order
+2022-03-02 23:38:31.515 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-02 23:39:36.321 -06:00 [WRN] Error while placing order
+2022-03-02 23:39:36.322 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-02 23:40:44.908 -06:00 [WRN] Error while placing order
+2022-03-02 23:40:44.908 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-03 00:05:58.918 -06:00 [WRN] Error while placing order
+2022-03-03 00:05:58.927 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__customer__671F4F74". The conflict occurred in database "ShoppingDBDemo", table "dbo.Customer", column 'customerID'.
+The statement has been terminated.
+2022-03-03 00:08:13.747 -06:00 [WRN] Error while placing order
+2022-03-03 00:08:13.747 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-03 00:19:07.804 -06:00 [WRN] Error while placing order
+2022-03-03 00:19:07.821 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__customer__671F4F74". The conflict occurred in database "ShoppingDBDemo", table "dbo.Customer", column 'customerID'.
+The statement has been terminated.
+2022-03-03 00:21:45.706 -06:00 [WRN] Error while placing order
+2022-03-03 00:21:45.707 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-03 00:29:32.916 -06:00 [WRN] Error while placing order
+2022-03-03 00:29:32.927 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-03 00:31:48.379 -06:00 [WRN] Error while placing order
+2022-03-03 00:31:48.379 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-03 00:32:46.091 -06:00 [WRN] Error while placing order
+2022-03-03 00:32:46.091 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__produ__6CD828CA". The conflict occurred in database "ShoppingDBDemo", table "dbo.Product", column 'productID'.
+The statement has been terminated.
+2022-03-03 00:36:03.983 -06:00 [WRN] Error while placing order
+2022-03-03 00:36:03.983 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-03 00:38:20.728 -06:00 [WRN] Error while placing order
+2022-03-03 00:38:20.728 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__LineItems__order__6DCC4D03". The conflict occurred in database "ShoppingDBDemo", table "dbo.Orders", column 'orderID'.
+The statement has been terminated.
+2022-03-03 00:56:46.595 -06:00 [WRN] Error while placing order
+2022-03-03 00:56:46.608 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__customer__671F4F74". The conflict occurred in database "ShoppingDBDemo", table "dbo.Customer", column 'customerID'.
+The statement has been terminated.
+2022-03-03 00:58:18.846 -06:00 [WRN] Error while placing order
+2022-03-03 00:58:18.846 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__storeID__681373AD". The conflict occurred in database "ShoppingDBDemo", table "dbo.StoreFront", column 'storeID'.
+The statement has been terminated.
+2022-03-03 01:04:34.078 -06:00 [WRN] Error while placing order
+2022-03-03 01:04:34.087 -06:00 [WRN] The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Orders__storeID__681373AD". The conflict occurred in database "ShoppingDBDemo", table "dbo.StoreFront", column 'storeID'.
+The statement has been terminated.
+2022-03-03 01:08:25.807 -06:00 [WRN] Error while getting order history
+2022-03-03 01:08:25.817 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-03 02:47:20.298 -06:00 [INF] List of all store
+2022-03-03 02:48:06.602 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-03 02:48:28.848 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.

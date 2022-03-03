@@ -120,6 +120,21 @@ namespace ShoppingApi.Controllers
         }
 
 
+        [HttpGet("GetAllOrderByPrice")]
+        public IActionResult GetOrderbyPrice()
+        {
+            try
+            {
+                return Ok(_orderBL.GetOrderbyPrice());
+            }
+            catch(SqlException)
+            {
+                return NotFound();
+            }  
+        }
+
+
+
         // GET: api/Manager/5
         [HttpGet("CustomerOrderHistory")]
         public async Task<IActionResult> GetAllOrdersByCustomerID([FromQuery] Guid b_customerID)

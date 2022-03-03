@@ -14,7 +14,7 @@ namespace ShoppingDL
          {
             string _sqlQuery = @"INSERT INTO Customer
                 VALUES(@customerID, @customerName, @customerAddress, @customerEmail, @customerUsername,  @customerPassword)";
-
+                   b_customer.CustomerID = Guid.NewGuid();
                    b_customer.CreatedAt = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
         using (SqlConnection con = new SqlConnection(_connectionStrings))
         {

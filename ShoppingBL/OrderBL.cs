@@ -67,7 +67,14 @@ namespace ShoppingBL
         return _listOfOrder.FindAll(b => b.StoreID.Equals(b_storeID));
         }
 
+        public async Task<List<LineItem>> AddLineItemsToOrder(Order b_order)
+        {
+            return await _orderRepo.AddLineItemsToOrder(b_order);
+        }
 
-        
+        public Task<List<Order>> GetOrderbyPrice()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

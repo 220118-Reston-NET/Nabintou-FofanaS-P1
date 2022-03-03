@@ -7,6 +7,7 @@ public class Product
     public string ProductDescription { get; set; }
     public decimal ProductPrice { get; set; }
     public DateTime createdAt { get; set; }
+    public Guid StoreID { get; set; }
     
         public Product()
         {
@@ -15,6 +16,7 @@ public class Product
             ProductDescription = "";
             ProductPrice = 0;
             createdAt = DateTime.Now;
+            StoreID = Guid.NewGuid();
         }
     }
 }

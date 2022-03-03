@@ -40,6 +40,9 @@ builder.Services.AddScoped<IProductBL, ProductBL>();
 builder.Services.AddScoped<IRepository_v>(repo => new InventoryRepository(builder.Configuration.GetConnectionString("Reference2DBKey")));
 builder.Services.AddScoped<IInventoryBL, InventoryBL>();
 
+builder.Services.AddScoped<IRepository_cart>(repo => new LineItemsRepository(builder.Configuration.GetConnectionString("Reference2DBKey")));
+builder.Services.AddScoped<ILineItemBL, LineItemBL>();
+
 
 var app = builder.Build();
 

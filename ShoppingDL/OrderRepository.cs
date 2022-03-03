@@ -14,12 +14,13 @@ namespace ShoppingDL
     public async Task<Order> PlaceOrder(Order b_order)
     {
       string _sqlQuery = @"INSERT INTO Orders
-                         
                          VALUES(@orderID, @customerID, @storeID, @totalPrice, @createdAt)";
 
       b_order.OrderID = Guid.NewGuid();
+      
       b_order.createdAt = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
       b_order.TotalPrice = CalTotalPrice(b_order);
+      
 
       using (SqlConnection conn = new SqlConnection(_connectionStrings))
       {
@@ -48,7 +49,9 @@ namespace ShoppingDL
       {
       string _sqlQuery = @"SELECT *
                           FROM Orders;";
+
       List<Order> _listOfOrders = new List<Order>();
+      
 
       using (SqlConnection conn = new SqlConnection(_connectionStrings))
       {
@@ -80,7 +83,9 @@ namespace ShoppingDL
       string _sqlQuery = @"INSERT INTO LineItems
                           (productID, orderID, productQuantity, priceAtCheckout)
                     VALUES(@productID, @orderID, @productQuantity, @priceAtCheckout);";
-
+      
+       
+      
       using (SqlConnection conn = new SqlConnection(_connectionStrings))
       {
         await conn.OpenAsync();
@@ -89,12 +94,14 @@ namespace ShoppingDL
 
         foreach (var item in b_order.ShoppingCart)
         {
+          item.price = 10m;
+          
           command = new SqlCommand(_sqlQuery, conn);
         
           command.Parameters.AddWithValue("@productID", item.ProductID);
           command.Parameters.AddWithValue("@orderID", b_order.OrderID);
           command.Parameters.AddWithValue("@productQuantity", item.ProductQuantity);
-          command.Parameters.AddWithValue("@priceAtCheckout", item.priceAtCheckout);
+          command.Parameters.AddWithValue("@priceAtCheckout", item.price);
           
 
           await command.ExecuteNonQueryAsync();
@@ -156,13 +163,119 @@ namespace ShoppingDL
             ProductID = reader.GetGuid(0),
             OrderID = reader.GetGuid(1),
             ProductQuantity = reader.GetInt32(2),
-            priceAtCheckout = reader.GetDecimal(3)
+            price = reader.GetDecimal(3)
           });
         }
       }
 
       return _ShopCart;
     }
+
+
+
+     public async Task<List<Order>> GetAllOrdersByCustomerID(Guid b_customerID)
+     {
+            List<Order> listOfOrders = new List<Order>();
+
+            string SQLQuery = @"select orderID, storeID, totalPrice, createdAt from Order
+                               WHERE customerID = @customerID";
+
+
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+
+                await con.OpenAsync();
+
+                SqlCommand command = new SqlCommand(SQLQuery, con);
+
+                command.Parameters.AddWithValue("@customerID", b_customerID);
+                 SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                while (reader.Read())
+                {
+                    listOfOrders.Add(new Order(){
+                        OrderID = reader.GetGuid(0),
+                        CustomerID = reader.GetGuid(1),
+                        StoreID = reader.GetGuid(2),
+                        TotalPrice = reader.GetDecimal(3),
+                        createdAt = reader.GetDateTime(4),
+                        ShoppingCart = await GetLineItemsByOrderID(reader.GetGuid(0))
+                    });
+
+                }
+
+            }
+            return listOfOrders;
+        }
+
+         public async Task<List<Order>> GetAllOrdersByStoreID(Guid b_storeID)
+        {
+            List<Order> listOfOrders = new List<Order>();
+
+            string SQLQuery = @"select orderID, storeID, totalPrice, createdAt from Order
+                               storeID = @storeID";
+
+
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+
+                await con.OpenAsync();con.Open();
+
+                SqlCommand command = new SqlCommand(SQLQuery, con);
+
+                command.Parameters.AddWithValue("@storeID", b_storeID);
+                 SqlDataReader reader = await command.ExecuteReaderAsync();
+                while (reader.Read())
+                {
+                    listOfOrders.Add(new Order(){
+                        OrderID = reader.GetGuid(0),
+                        CustomerID = reader.GetGuid(1),
+                        StoreID = reader.GetGuid(2),
+                        TotalPrice = reader.GetDecimal(3),
+                        createdAt = reader.GetDateTime(4),
+                        ShoppingCart = await GetLineItemsByOrderID(reader.GetGuid(0))
+                    });
+
+                }
+
+            }
+            
+            return listOfOrders;
+        }
+
+
+        public async Task<Order> GetOrderbyPrice()
+        {
+            List<Order> listOfOrders = new List<Order>();
+            Order b_order = new Order();
+            string SQLQuery = @"SELECT * from Orders where totalPrice = 0";
+
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+
+                await con.OpenAsync();con.Open();
+
+                SqlCommand command = new SqlCommand(SQLQuery, con);
+
+                SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                while (reader.Read())
+                {
+                    listOfOrders.Add(new Order(){
+                        OrderID = reader.GetGuid(0),
+                        CustomerID = reader.GetGuid(1),
+                        StoreID = reader.GetGuid(2),
+                        TotalPrice = reader.GetDecimal(3),
+                        createdAt = reader.GetDateTime(4),
+                        ShoppingCart = await GetLineItemsByOrderID(reader.GetGuid(0))
+                    });
+                }
+            }
+            b_order = listOfOrders[0];
+            return b_order;
+        }
+
+
 
 
       public async Task<Order> UpdateOrder(Order b_order)
@@ -205,11 +318,11 @@ namespace ShoppingDL
 
       foreach (var item in b_order.ShoppingCart)
       {
-        _totalPrice += item.ProductQuantity * item.priceAtCheckout ;
+        _totalPrice += item.ProductQuantity * item.price ;
       }
 
       return _totalPrice;
     }
-
+      
     }
 }

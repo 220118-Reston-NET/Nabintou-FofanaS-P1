@@ -18,12 +18,14 @@ namespace ShoppingApi.Controllers
         private readonly IStoreBL _storeBL;
         private readonly IOrderBL _orderBL;
         private readonly IInventoryBL _invenBL;
+        private readonly IProductBL _productBL;
 
-        public StoreController(IStoreBL storeBL, IOrderBL orderBL, IInventoryBL invenBL)
+        public StoreController(IStoreBL b_storeBL, IOrderBL b_orderBL, IInventoryBL b_invenBL, IProductBL b_productBL)
         {
-            _storeBL = storeBL;
-            _orderBL = orderBL;
-            _invenBL = invenBL;
+            _storeBL = b_storeBL;
+            _orderBL = b_orderBL;
+            _invenBL = b_invenBL;
+            _productBL = b_productBL;
         }
 
 
@@ -58,7 +60,7 @@ namespace ShoppingApi.Controllers
         Log.Warning(e.Message);
         return NotFound(e);
        }
-    }
+      }
 
     [HttpGet("Search Store")]
     public async Task<IActionResult> GetStoreByStoreID([FromQuery] Guid b_storeID)
@@ -89,6 +91,22 @@ namespace ShoppingApi.Controllers
         return StatusCode(406, e);
       }
     }
+
+
+      [HttpGet("GetProductByStoreID")]
+        public IActionResult GetProductByStoreID([FromBody] Guid b_store)
+        {
+            try
+            {
+                return Ok(_productBL.GetProductByStoreID(b_store));
+            }
+            catch(SqlException)
+            {
+                return NotFound();
+            }  
+        }
+
+
 
 
      [HttpPost("Add Inventory")]

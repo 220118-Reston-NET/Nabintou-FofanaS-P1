@@ -12,30 +12,38 @@ using ShoppingModel;
 
 namespace ShoppingApi.Controllers
 {
-    [Route("apiv2/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase
     {
+
         private readonly ICustomerBL _customerBL;
         private readonly IOrderBL _orderBL;
-
-
-        public CustomerController(ICustomerBL b_customerBL, IOrderBL b_orderBL)
+        private readonly IProductBL _productBL;
+        private readonly ILineItemBL _lineitemBL;
+        public CustomerController(ICustomerBL b_customerBL, IOrderBL b_orderBL, IProductBL b_productBL, ILineItemBL b_lineitemBL)
         {
             _customerBL = b_customerBL;
             _orderBL = b_orderBL;
+            _productBL = b_productBL;
+            _lineitemBL = b_lineitemBL;
         }
 
-    
 
-       [HttpPost("Register")]
-       public IActionResult AddCustomer([FromBody] NewCustomer b_customer)
+
+        [HttpPost("Register/{Name}/{Address}/{Email}/{Username}/{Password}")]
+       public IActionResult AddCustomer(string Name, string Address, string Email, string Username, string Password,[FromBody] NewCustomer b_customer)
         {
+          b_customer.CustomerID = new Guid();
+          b_customer.CustomerName = Name;
+          b_customer.CustomerAddress = Address;
+          b_customer.CustomerUsername = Username;
+          b_customer.CustomerEmail = Email;
+          b_customer.CustomerPassword = Password;
              try
             {
-                Log.Information("Customer successfully registered");
                 return Created("Customer successfully registered", _customerBL.AddCustomer(b_customer));
-                
+                //Log.Information("Customer successfully registered");
             }
             catch(System.Exception ex)
             {
@@ -45,12 +53,15 @@ namespace ShoppingApi.Controllers
         }
         
 
-         [HttpPost("Login")]
-       public IActionResult Login([FromBody] CustomerLogin b_customer)
+         [HttpPost("Login/{Username}/{Password}")]
+       public IActionResult Login(string Username, string Password, [FromBody] CustomerLogin b_customer)
         {
+            b_customer.CustomerUsername = Username;
+            b_customer.CustomerPassword = Password;
              try
             {
                 return Created("Successfully login", _customerBL.Login(b_customer));
+                //Log.Information("Customer successfully registered");
             }
             catch(System.Exception ex)
             {
@@ -58,27 +69,38 @@ namespace ShoppingApi.Controllers
             }
           
         }
-        
 
 
 
-    // POST: api/Customer/Orders
-    [HttpPost("PlaceOrder{CustomerID}")]
-    public async Task<IActionResult> PlaceOrder2(Guid CustomerID, [FromBody] Order b_order)
-    {
+        [HttpGet("GetAllProduct")]
+        public IActionResult GetAllProduct()
+        {
+            try
+            {
+                return Ok(_productBL.GetAllProduct());
+            }
+            catch(SqlException)
+            {
+                return NotFound();
+            }  
+        }
+
+
+        // POST: api/Customer/Orders
+        [HttpPost("PlaceOrder")]
+      public async Task<IActionResult> PlaceOrder2([FromBody] Order b_order)
+      {
       try
       {
-        b_order.CustomerID = CustomerID;
         return Created("Succesfully created new order!", await _orderBL.PlaceOrder(b_order));
       }
       catch (Exception e)
       {
         Log.Warning("Error while placing order");
         Log.Warning(e.Message);
-        return StatusCode(500, e);
+        return Conflict(e.Message);
       }
-    }
-
+      }
 
 
 
@@ -89,11 +111,11 @@ namespace ShoppingApi.Controllers
         {
           return Ok(await _orderBL.GetAllOrdersByCustomerID(b_customerID));
         }
-          catch (Exception e)
-        {
-        
+         catch (Exception e)
+      {
+        Log.Warning("Error while getting order history");
         Log.Warning(e.Message);
-        return NotFound(e.Message);
+        return Conflict(e.Message);
         }
         }
 
@@ -101,11 +123,9 @@ namespace ShoppingApi.Controllers
 
 
         // PUT: api/Shopping/5
-       [HttpPut("Update Customer Info")]
-        public IActionResult Put(string Email, [FromBody] ReturningCustomer b_customer)
-        {
-            b_customer.CustomerEmail = Email;
-
+       [HttpPut("UpdateCustomerInfoUsingCustomerID")]
+            public IActionResult Put([FromQuery] ReturningCustomer b_customer)
+            {
               try
             {
                 return Ok(_customerBL.UpdateCustomer(b_customer));
