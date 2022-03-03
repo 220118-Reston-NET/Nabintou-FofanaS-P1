@@ -116,3 +116,36 @@ The statement has been terminated.
 2022-03-03 02:47:20.298 -06:00 [INF] List of all store
 2022-03-03 02:48:06.602 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
 2022-03-03 02:48:28.848 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-03 10:08:00.076 -06:00 [WRN] Error while getting order history
+2022-03-03 10:08:00.085 -06:00 [WRN] Unable to cast object of type 'System.Int32' to type 'System.Guid'.
+2022-03-03 10:28:17.887 -06:00 [WRN] Error while getting order history
+2022-03-03 10:28:17.894 -06:00 [WRN] Incorrect syntax near the keyword 'Order'.
+2022-03-03 10:31:17.173 -06:00 [WRN] Error while getting order history
+2022-03-03 10:31:17.183 -06:00 [WRN] Unable to cast object of type 'System.Decimal' to type 'System.Guid'.
+2022-03-03 10:40:20.519 -06:00 [WRN] Error while getting order history
+2022-03-03 10:40:20.519 -06:00 [WRN] The connection was not closed. The connection's current state is open.
+2022-03-03 10:41:11.667 -06:00 [WRN] Error while getting order history
+2022-03-03 10:41:11.667 -06:00 [WRN] Unable to cast object of type 'System.Decimal' to type 'System.Guid'.
+2022-03-03 11:03:29.071 -06:00 [WRN] Error while getting order history
+2022-03-03 11:03:29.080 -06:00 [WRN] Unable to cast object of type 'System.Decimal' to type 'System.Guid'.
+2022-03-03 11:55:53.794 -06:00 [INF] List of all store
+2022-03-03 11:56:52.545 -06:00 [INF] Searching store
+2022-03-03 11:57:24.567 -06:00 [INF] Updating store
+2022-03-03 11:57:25.174 -06:00 [WRN] Must declare the scalar variable "@storeID".
+2022-03-03 11:59:03.019 -06:00 [INF] Updating store
+2022-03-03 11:59:03.730 -06:00 [WRN] Must declare the scalar variable "@storeID".
+2022-03-03 12:00:04.842 -06:00 [INF] Updating store
+2022-03-03 12:00:32.039 -06:00 [INF] Searching store
+2022-03-03 12:01:10.979 -06:00 [INF] List of all store
+2022-03-03 12:05:24.536 -06:00 [INF] List of all store
+2022-03-03 12:05:48.196 -06:00 [INF] Searching store
+2022-03-03 12:12:00.549 -06:00 [WRN] Index was outside the bounds of the array.
+2022-03-03 12:12:48.025 -06:00 [WRN] Index was outside the bounds of the array.
+2022-03-03 12:26:03.332 -06:00 [WRN] Error while getting order history
+2022-03-03 12:26:03.341 -06:00 [WRN] The connection was not closed. The connection's current state is open.
+2022-03-03 12:26:37.957 -06:00 [WRN] Error while getting order history
+2022-03-03 12:26:37.958 -06:00 [WRN] The connection was not closed. The connection's current state is open.
+2022-03-03 12:29:56.321 -06:00 [WRN] Error while getting order history
+2022-03-03 12:29:56.328 -06:00 [WRN] The connection was not closed. The connection's current state is open.
+2022-03-03 12:30:19.527 -06:00 [WRN] Error while getting order history
+2022-03-03 12:30:19.527 -06:00 [WRN] Unable to cast object of type 'System.Decimal' to type 'System.Guid'.

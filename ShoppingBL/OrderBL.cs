@@ -26,10 +26,12 @@ namespace ShoppingBL
              return await _orderRepo.PlaceOrder(b_order);
         }
 
+
          public async Task<List<Order>> GetAllOrders()
         {
          return await _orderRepo.GetAllOrders();
         }
+
 
         public async Task<Order> GetOrderByOrderID(Guid b_orderID)
         {
@@ -54,17 +56,20 @@ namespace ShoppingBL
         
         public async Task<List<Order>> GetAllOrdersByCustomerID(Guid b_customerID)
         {
-            List<Order> _listOfOrder = await GetAllOrders();
+            //List<Order> _listOfOrder = await GetAllOrders();
             
-           return _listOfOrder.FindAll(p => p.CustomerID.Equals(b_customerID));
+           //return _listOfOrder.FindAll(p => p.CustomerID.Equals(b_customerID));
+           return await _orderRepo.GetAllOrdersByCustomerID(b_customerID);
+        
         }
 
 
 
         public async Task<List<Order>> GetAllOrdersByStoreID(Guid b_storeID)
         {
-         List<Order> _listOfOrder = await GetAllOrders();
-        return _listOfOrder.FindAll(b => b.StoreID.Equals(b_storeID));
+         //List<Order> _listOfOrder = await GetAllOrders();
+       //return _listOfOrder.FindAll(b => b.StoreID.Equals(b_storeID));
+        return await _orderRepo.GetAllOrdersByStoreID(b_storeID);
         }
 
         public async Task<List<LineItem>> AddLineItemsToOrder(Order b_order)
@@ -72,9 +77,11 @@ namespace ShoppingBL
             return await _orderRepo.AddLineItemsToOrder(b_order);
         }
 
-        public Task<List<Order>> GetOrderbyPrice()
+        public async Task<Order> GetOrderbyPrice()
         {
-            throw new NotImplementedException();
+            return await _orderRepo.GetOrderbyPrice();
         }
+
+
     }
 }

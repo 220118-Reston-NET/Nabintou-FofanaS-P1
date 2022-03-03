@@ -31,17 +31,17 @@ namespace ShoppingApi.Controllers
 
 
         [HttpPost("Add Store")]
-        public IActionResult AddNewStore([FromBody] StoreFront b_store)
+        public async Task<IActionResult> AddNewStore(StoreFront b_store)
         {
              try
             {
-
-                return Created("Store successfully added", _storeBL.AddNewStoreFront(b_store));
-                
+                return Created("Store successfully added", await _storeBL.AddNewStoreFront(b_store));
             }
             catch(Exception e)
             {
-                return Conflict(e.Message);
+                Log.Warning("Could not add store");
+               Log.Warning(e.Message);
+               return NotFound(e);
             }
           
         }
@@ -78,7 +78,7 @@ namespace ShoppingApi.Controllers
     }
 
     [HttpPut("Update Store")]
-    public async Task<IActionResult> UpdateStore([FromBody] StoreFront b_store)
+    public async Task<IActionResult> UpdateStore( StoreFront b_store)
     {
       try
       {
@@ -94,16 +94,17 @@ namespace ShoppingApi.Controllers
 
 
       [HttpGet("GetProductByStoreID")]
-        public IActionResult GetProductByStoreID([FromBody] Guid b_store)
+        public IActionResult GetProductByStoreID( Guid b_store)
         {
             try
             {
                 return Ok(_productBL.GetProductByStoreID(b_store));
             }
-            catch(SqlException)
-            {
-                return NotFound();
-            }  
+             catch (Exception e)
+      {
+        Log.Warning(e.Message);
+        return NotFound(e);
+      }
         }
 
 

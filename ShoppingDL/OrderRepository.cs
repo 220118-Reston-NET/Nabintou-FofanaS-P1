@@ -84,7 +84,7 @@ namespace ShoppingDL
                           (productID, orderID, productQuantity, priceAtCheckout)
                     VALUES(@productID, @orderID, @productQuantity, @priceAtCheckout);";
       
-       
+      
       
       using (SqlConnection conn = new SqlConnection(_connectionStrings))
       {
@@ -94,7 +94,7 @@ namespace ShoppingDL
 
         foreach (var item in b_order.ShoppingCart)
         {
-          item.price = 10m;
+          //item.price = 10 ;
           
           command = new SqlCommand(_sqlQuery, conn);
         
@@ -177,7 +177,8 @@ namespace ShoppingDL
      {
             List<Order> listOfOrders = new List<Order>();
 
-            string SQLQuery = @"select orderID, storeID, totalPrice, createdAt from Order
+            string SQLQuery = @"select orderID, customerID, storeID, totalPrice, createdAt 
+                                  FROM Orders
                                WHERE customerID = @customerID";
 
 
@@ -195,11 +196,11 @@ namespace ShoppingDL
                 {
                     listOfOrders.Add(new Order(){
                         OrderID = reader.GetGuid(0),
-                        CustomerID = reader.GetGuid(1),
-                        StoreID = reader.GetGuid(2),
-                        TotalPrice = reader.GetDecimal(3),
-                        createdAt = reader.GetDateTime(4),
-                        ShoppingCart = await GetLineItemsByOrderID(reader.GetGuid(0))
+            CustomerID = reader.GetGuid(1),
+            StoreID = reader.GetGuid(2),
+            TotalPrice = reader.GetDecimal(3),
+            createdAt = reader.GetDateTime(4),
+           // ShoppingCart = await GetLineItemsByOrderID(reader.GetGuid(0))
                     });
 
                 }
@@ -212,8 +213,8 @@ namespace ShoppingDL
         {
             List<Order> listOfOrders = new List<Order>();
 
-            string SQLQuery = @"select orderID, storeID, totalPrice, createdAt from Order
-                               storeID = @storeID";
+            string SQLQuery = @"select orderID, customerID, storeID, totalPrice, createdAt From Orders
+                              WHERE storeID = @storeID";
 
 
             using (SqlConnection con = new SqlConnection(_connectionStrings))
@@ -229,11 +230,11 @@ namespace ShoppingDL
                 {
                     listOfOrders.Add(new Order(){
                         OrderID = reader.GetGuid(0),
-                        CustomerID = reader.GetGuid(1),
-                        StoreID = reader.GetGuid(2),
-                        TotalPrice = reader.GetDecimal(3),
-                        createdAt = reader.GetDateTime(4),
-                        ShoppingCart = await GetLineItemsByOrderID(reader.GetGuid(0))
+            CustomerID = reader.GetGuid(1),
+            StoreID = reader.GetGuid(2),
+            TotalPrice = reader.GetDecimal(3),
+            createdAt = reader.GetDateTime(4),
+            //ShoppingCart = await GetLineItemsByOrderID(reader.GetGuid(0))
                     });
 
                 }

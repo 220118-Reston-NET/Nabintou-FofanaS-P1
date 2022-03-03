@@ -15,7 +15,6 @@ namespace ShoppingApi.Controllers
     [ApiController]
     public class ManagerController : ControllerBase
     {
-
         private readonly ICustomerBL _customerBL;
         private readonly IAdminBL _adminBL;
         private readonly IStoreBL _storeBL;
@@ -120,19 +119,6 @@ namespace ShoppingApi.Controllers
         }
 
 
-        [HttpGet("GetAllOrderByPrice")]
-        public IActionResult GetOrderbyPrice()
-        {
-            try
-            {
-                return Ok(_orderBL.GetOrderbyPrice());
-            }
-            catch(SqlException)
-            {
-                return NotFound();
-            }  
-        }
-
 
 
         // GET: api/Manager/5
@@ -146,8 +132,9 @@ namespace ShoppingApi.Controllers
           catch (Exception e)
         {
         
-        Log.Warning(e.Message);
-        return NotFound(e);
+         Log.Warning("Error while getting order history");
+                Log.Warning(e.Message);
+                 return Conflict(e.Message);
         }
         }
 
@@ -163,8 +150,9 @@ namespace ShoppingApi.Controllers
           catch (Exception e)
         {
         
-        Log.Warning(e.Message);
-        return NotFound(e);
+         Log.Warning("Error while getting order history");
+                Log.Warning(e.Message);
+                 return Conflict(e.Message);
         }
         }
 

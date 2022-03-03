@@ -8,7 +8,7 @@ public class Store
         
      public Store()
         {
-            StoreID = Guid.Empty;
+            StoreID = Guid.NewGuid();
             StoreName = "";
             StoreLocation = "";
             

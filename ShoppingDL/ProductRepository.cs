@@ -79,7 +79,7 @@ namespace ShoppingDL
             List<Product> _listOfProducts = new List<Product>();
 
             string _sqlQuery = @"SELECT productID, productName,productDescription , 
-                                        productPrice, createdAt FROM Product 
+                                        productPrice, createdAt, storeID FROM Product 
                                WHERE storeID = @storeID";
                         
 

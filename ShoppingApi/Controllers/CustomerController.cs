@@ -17,6 +17,7 @@ namespace ShoppingApi.Controllers
     public class CustomerController : ControllerBase
     {
 
+        //private static Product _product = new Product();
         private readonly ICustomerBL _customerBL;
         private readonly IOrderBL _orderBL;
         private readonly IProductBL _productBL;

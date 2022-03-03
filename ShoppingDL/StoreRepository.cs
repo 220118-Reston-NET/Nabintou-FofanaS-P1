@@ -14,10 +14,11 @@ namespace ShoppingDL
 
      public async Task<StoreFront> AddNewStoreFront(StoreFront b_store)
         {
-            string _sqlQuery = @"INSERT INTO StoreFront
-                          (storeID, storeName, storeLocation)
-                          VALUES(@storeID, @storeName, @storeLocation);";
+
             b_store.StoreID = Guid.NewGuid();
+            string _sqlQuery = @"INSERT INTO StoreFront
+                          VALUES(@storeID, @storeName, @storeLocation);";
+            
          using (SqlConnection conn = new SqlConnection(_connectionStrings))
          {
          await conn.OpenAsync();

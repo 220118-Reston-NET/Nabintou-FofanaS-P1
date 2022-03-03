@@ -8,7 +8,7 @@ public class StoreFront
 
      public StoreFront()
         {
-            StoreID = Guid.Empty;
+            StoreID = Guid.NewGuid();
             StoreName = "";
             StoreLocation = "";
         }
