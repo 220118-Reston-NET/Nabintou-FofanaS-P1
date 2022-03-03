@@ -20,16 +20,13 @@
 
 I added 3 main Controllers:
 ## Admin Controller
-> Role: Admin
 - Manage Profile
 - Manage store's customers
 ## Customer Controller
-> Role: Customer
 - Manage Profile
 - Search Product and Store, Place order
 - Manage their own orders(Check order history, Add more items to their orders, Cancel Order)
 ## Store Controller
-> Roles: Admin
 - Manage store's inventory(add new product, replenish inventory)
 - Manage store's orders
   
