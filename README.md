@@ -6,7 +6,7 @@
 - https://github.com/220118-Reston-NET/Nabintous-Fofana-P1/tree/main
 - [Table of Contents](#table-of-contents)
 - [Features](#features)
-  - [Authentication Controller](#authentication-controller)
+  
   - [Admin Controller](#admin-controller)
   - [Customer Controller](#customer-controller)
   - [Store Controller](#store-controller)
